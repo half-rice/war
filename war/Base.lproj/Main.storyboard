@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="war" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yan-jA-7J9" userLabel="Background">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Otl-yf-tbe" userLabel="FirstCard">
+                                <rect key="frame" x="50" y="215" width="120" height="170"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.84087649860000002" green="1" blue="0.8304335196" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="KEu-aD-LFG"/>
+                                    <constraint firstAttribute="height" constant="170" id="WFY-lt-dG5"/>
+                                </constraints>
+                                <variation key="heightClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="50" y="115" width="120" height="170"/>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="50" y="115" width="120" height="170"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JVh-5Z-0Ov" userLabel="SecondCard">
+                                <rect key="frame" x="430" y="215" width="120" height="170"/>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="170" id="5b8-W7-vK0"/>
+                                    <constraint firstAttribute="width" constant="120" id="QNK-mH-mcL"/>
+                                </constraints>
+                                <variation key="heightClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="415" y="115" width="120" height="170"/>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="50" y="115" width="120" height="170"/>
+                                </variation>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EGW-1f-mxy">
+                                <rect key="frame" x="284.5" y="420" width="31" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Deal">
+                                    <color key="titleColor" red="0.84087649860000002" green="1" blue="0.8304335196" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="EGW-1f-mxy" secondAttribute="bottom" constant="150" id="80V-Sd-cMk"/>
+                            <constraint firstItem="Otl-yf-tbe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="150" id="G55-Se-rOb"/>
+                            <constraint firstItem="Otl-yf-tbe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="50" id="HeZ-A4-Crk"/>
+                            <constraint firstItem="JVh-5Z-0Ov" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="I3z-33-dEy"/>
+                            <constraint firstAttribute="bottom" secondItem="EGW-1f-mxy" secondAttribute="bottom" constant="50" id="QQ4-Ek-MaT"/>
+                            <constraint firstAttribute="trailing" secondItem="JVh-5Z-0Ov" secondAttribute="trailing" constant="150" id="Sra-7J-fHD"/>
+                            <constraint firstItem="EGW-1f-mxy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VwT-xe-sXZ"/>
+                            <constraint firstAttribute="trailing" secondItem="yan-jA-7J9" secondAttribute="trailing" id="btA-Ka-eJY"/>
+                            <constraint firstItem="Otl-yf-tbe" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="k0z-29-80O"/>
+                            <constraint firstItem="yan-jA-7J9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="nop-2C-RLH"/>
+                            <constraint firstAttribute="trailing" secondItem="JVh-5Z-0Ov" secondAttribute="trailing" constant="50" id="shI-Vy-p00"/>
+                            <constraint firstItem="yan-jA-7J9" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="tfR-dt-qCL"/>
+                            <constraint firstAttribute="bottom" secondItem="yan-jA-7J9" secondAttribute="bottom" id="zRg-CG-d1l"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="G55-Se-rOb"/>
+                                <exclude reference="Sra-7J-fHD"/>
+                                <exclude reference="QQ4-Ek-MaT"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="G55-Se-rOb"/>
+                                <include reference="Sra-7J-fHD"/>
+                                <include reference="QQ4-Ek-MaT"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="HeZ-A4-Crk"/>
+                                <include reference="shI-Vy-p00"/>
+                                <include reference="80V-Sd-cMk"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundImageView" destination="yan-jA-7J9" id="2bD-px-k5R"/>
+                        <outlet property="dealButton" destination="EGW-1f-mxy" id="FhE-yb-Mpf"/>
+                        <outlet property="firstCardImageView" destination="Otl-yf-tbe" id="E5c-gf-G0I"/>
+                        <outlet property="secondCardImageView" destination="JVh-5Z-0Ov" id="Ttf-rk-U4z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="443" y="464"/>
+        </scene>
+    </scenes>
+</document>
