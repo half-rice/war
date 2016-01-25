@@ -284,6 +284,7 @@
 				3937D7721C411984004EEE7E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
